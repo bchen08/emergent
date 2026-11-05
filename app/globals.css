@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #0c0a09;
+  --muted: #57534e;
+  --border: #e7e5e4;
+  --surface: #ffffff;
+  --accent: #0f766e;
+  --accent-foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.dot-grid {
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+}
