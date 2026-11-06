@@ -37,8 +37,8 @@ export function Features() {
         </div>
         <ul className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
           {features.map(({ icon: Icon, title, description }) => (
-            <li key={title} className="flex flex-col gap-4 bg-surface p-8">
-              <span className="flex size-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
+            <li key={title} className="group flex flex-col gap-4 bg-surface p-8 transition-colors hover:bg-background">
+              <span className="flex size-10 items-center justify-center rounded-lg bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
                 <Icon className="size-5" aria-hidden="true" />
               </span>
               <div>

@@ -22,13 +22,34 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .dot-grid {
   background-image: radial-gradient(var(--border) 1px, transparent 1px);
   background-size: 22px 22px;
   mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+}
+
+.hero-glow {
+  background: radial-gradient(
+    ellipse 50% 40% at 50% 35%,
+    color-mix(in srgb, var(--accent) 12%, transparent),
+    transparent
+  );
 }

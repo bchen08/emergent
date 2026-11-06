@@ -15,10 +15,10 @@ export function CallToAction() {
           </div>
           <a
             href="#"
-            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-90"
+            className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-90"
           >
             Create your account
-            <ArrowRight className="size-4" aria-hidden="true" />
+            <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
           </a>
         </div>
       </div>
